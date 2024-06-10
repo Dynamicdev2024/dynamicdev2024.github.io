@@ -27,6 +27,9 @@
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
+    <!-- Lightbox CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
+
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
 </head>
@@ -53,8 +56,8 @@
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav mx-auto">
                     <a href="index.html" class="nav-item nav-link active">Home</a>
-                    <a href="about.html" class="nav-item nav-link">About Us</a>
-                    <a href="classes.html" class="nav-item nav-link">Classes</a>
+                    <a href="#aboutus" class="nav-item nav-link">About Us</a>
+                    <a href="#courses" class="nav-item nav-link">Classes</a>
                     <!-- <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
                         <div class="dropdown-menu rounded-0 rounded-bottom border-0 shadow-sm m-0">
@@ -66,7 +69,7 @@
                             <a href="404.html" class="dropdown-item">404 Error</a>
                         </div>
                     </div> -->
-                    <a href="contact.html" class="nav-item nav-link">Contact</a>
+                    <a href="#contactus" class="nav-item nav-link">Contact Us</a>
                 </div>
                 <a href="https://wa.link/ah00j8" class="btn btn-primary rounded-pill px-3 d-none d-lg-block" target="_blank">Talk To Us<i class="bi bi-whatsapp ms-3"></i></a>
             </div>
@@ -85,8 +88,8 @@
                                 <div class="col-10 col-lg-8">
                                     <h1 class="display-2 text-white animated slideInDown mb-4">The Best Courses For Your Child</h1>
                                     <p class="fs-5 fw-medium text-white mb-4 pb-2">Unlocking Your Child’s Potential with the Best Course for Lifelong Success and Happiness.</p>
-                                    <a href="" class="btn btn-primary rounded-pill py-sm-3 px-sm-5 me-3 animated slideInLeft">Learn More</a>
-                                    <a href="" class="btn btn-dark rounded-pill py-sm-3 px-sm-5 animated slideInRight">Our Classes</a>
+                                    <a href="#aboutus" class="btn btn-primary rounded-pill py-sm-3 px-sm-5 me-3 animated slideInLeft">Learn More</a>
+                                    <a href="#courses" class="btn btn-dark rounded-pill py-sm-3 px-sm-5 animated slideInRight">Our Classes</a>
                                 </div>
                             </div>
                         </div>
@@ -100,8 +103,8 @@
                                 <div class="col-10 col-lg-8">
                                     <h1 class="display-2 text-white animated slideInDown mb-4">Make A Brighter Future For Your Child</h1>
                                     <p class="fs-5 fw-medium text-white mb-4 pb-2">Empowering Your Child Today for a Brighter, More Successful Tomorrow.</p>
-                                    <a href="" class="btn btn-primary rounded-pill py-sm-3 px-sm-5 me-3 animated slideInLeft">Learn More</a>
-                                    <a href="" class="btn btn-dark rounded-pill py-sm-3 px-sm-5 animated slideInRight">Our Classes</a>
+                                    <a href="#aboutus" class="btn btn-primary rounded-pill py-sm-3 px-sm-5 me-3 animated slideInLeft">Learn More</a>
+                                    <a href="#courses" class="btn btn-dark rounded-pill py-sm-3 px-sm-5 animated slideInRight">Our Classes</a>
                                 </div>
                             </div>
                         </div>
@@ -176,6 +179,7 @@
                     </div>
                 </div>
             </div>
+            <a id="aboutus" />
         </div>
         <!-- Facilities End -->
 
@@ -185,7 +189,7 @@
             <div class="container">
                 <div class="row g-5 align-items-center">
                     <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-                        <h1 class="mb-4">Learn More About Our Work And Our Cultural Activities</h1>
+                        <h1 class="mb-4">Learn More About Us</h1>
                         <p>
                             Our dynamic curriculum is designed to ignite curiosity and nurture creativity in young minds. From sensory exploration to early literacy activities, each day is packed with exciting adventures that spark joy and instill a love for learning.
                         </p>
@@ -256,6 +260,49 @@
         </div>
         <!-- Call To Action End -->
 
+        <!-- Gallery Starts -->
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                    <h1 class="mb-3">Our Gallery</h1>
+                    <!-- <p>Embark on a learning adventure tailored specifically for young minds! Our range of interactive and fun-filled courses is designed to inspire and educate kids in a safe and supportive environment.</p> -->
+                </div>
+                <div class="row gallery g-4">
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <a href="./img/gallery-01.jpg" data-lightbox="gallery" data-title="Gallery Image 1">
+                            <img src="./img/gallery-01.jpg" alt="Gallery Image 1" class="img-fluid">
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <a href="./img/gallery-02.jpg" data-lightbox="gallery" data-title="Gallery Image 2">
+                            <img src="./img/gallery-02.jpg" alt="Gallery Image 2" class="img-fluid">
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <a href="./img/gallery-03.jpg" data-lightbox="gallery" data-title="Gallery Image 3">
+                            <img src="./img/gallery-03.jpg" alt="Gallery Image 3" class="img-fluid">
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <a href="./img/gallery-04.jpg" data-lightbox="gallery" data-title="Gallery Image 4">
+                            <img src="./img/gallery-04.jpg" alt="Gallery Image 4" class="img-fluid">
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <a href="./img/gallery-05.jpg" data-lightbox="gallery" data-title="Gallery Image 5">
+                            <img src="./img/gallery-05.jpg" alt="Gallery Image 5" class="img-fluid">
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <a href="./img/gallery-06.jpg" data-lightbox="gallery" data-title="Gallery Image 6">
+                            <img src="./img/gallery-06.jpg" alt="Gallery Image 6" class="img-fluid">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <a id="courses" />
+        </div>
+        <!-- Gallery End -->
 
         <!-- Classes Start -->
         <div class="container-xxl py-5">
@@ -332,7 +379,7 @@
                                     <div class="col-6">
                                         <div class="border-top border-3 border-success pt-2">
                                             <h6 class="text-success mb-1">Time:</h6>
-                                            <small>1PM - 7PM Flexible</small>
+                                            <small>2PM - 7PM  Flexible</small>
                                         </div>
                                     </div>
                                     <!-- <div class="col-4">
@@ -372,7 +419,7 @@
                                     <div class="col-6">
                                         <div class="border-top border-3 border-success pt-2">
                                             <h6 class="text-success mb-1">Time:</h6>
-                                            <small>1PM - 7PM Flexible</small>
+                                            <small>2PM - 7PM  Flexible</small>
                                         </div>
                                     </div>
                                     <!-- <div class="col-4">
@@ -412,7 +459,7 @@
                                     <div class="col-6">
                                         <div class="border-top border-3 border-success pt-2">
                                             <h6 class="text-success mb-1">Time:</h6>
-                                            <small>1PM - 7PM Flexible</small>
+                                            <small>2PM - 7PM  Flexible</small>
                                         </div>
                                     </div>
                                     <!-- <div class="col-4">
@@ -507,6 +554,7 @@
                     </div> -->
                 </div>
             </div>
+            <a id="contactus" />
         </div>
         <!-- Classes End -->
 
@@ -521,9 +569,9 @@
                                 <h1 class="mb-4">Contact Us</h1>
                                 <p>We'd love to hear from you! Reach out to us with any questions or to schedule a visit.</p>
             <ul class="list-unstyled">
-                <li><strong>Address:</strong> K.G Nagar, 1st Main, Chamarajpet 5th Main, Bangalore Karnataka 560019</li>
+                <li><strong>Address:</strong> K.G Nagar, 1st Main, Chamarajpet Near By2 Coffee, Uma Theatre, 5th Main, Bangalore Karnataka 560019</li>
                 <li><strong>Phone:</strong> <a href="tel:+918217699324">+91 82176 99324</a></li>
-                <li><strong>Whatsapp:</strong> <a href="tel:+919844604644">+91 98446 04644</a></li>
+                <li><strong>Whatsapp:</strong> <a href="https://wa.link/ah00j8" target="_blank">+91 98446 04644</a></li>
                 <li><strong>Email:</strong> <a href="mailto:support@ddaedu.in">support@ddaedu.in</a></li>
             </ul>
                             </div>
@@ -536,6 +584,7 @@
                     </div>
                 </div>
             </div>
+            <a id="faqs" />
         </div>
         <!-- Appointment End -->
 
@@ -596,6 +645,108 @@
         </div> -->
         <!-- Team End -->
 
+        <!-- FAQs Start -->
+        <div class="container-xxl py-5">
+            <div class="container faq-section">
+                
+                <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                    <h1 class="faq-header mb-3">Frequently Asked Questions</h1>
+                    <!-- <p>Parents Speak, Kids Shine! Real Experiences, Real Joy! Lets hear it from our parents.</p> -->
+                </div>
+                <div class="row g-1">
+                    <div class="col-lg-6 col-sm-12">
+                        <div class="accordion" id="accordionExample">
+                            <div class="accordion-item">
+                              <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    What is DMIT Test ?
+                                </button>
+                              </h2>
+                              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    Dermatoglyphics Multiple Intelligence Test (DMIT) is a biometric test. It is the study of using fingerprints to map
+                                    genetic intelligence and traits. Just like the whole body, fingerprints are connected to the working of the brain,
+                                    and hence a detailed analysis help us understand the innate potential.
+                                </div>
+                              </div>
+                            </div>
+                            <div class="accordion-item">
+                              <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                  What are the benefits of DMIT ?
+                                </button>
+                              </h2>
+                              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                  The DMIT test reveals our comfort zones or potential zones which help us work towards a stable career.
+                                </div>
+                              </div>
+                            </div>
+                            <div class="accordion-item">
+                              <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                  What is the age limit for the DMIT test ?
+                                </button>
+                              </h2>
+                              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                  DMIT Test for all, From birth through about age three there are vast numbers of connections and collections being recorded in the brain.
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-lg-6 col-sm-12">
+                        <div class="accordion" id="accordionExampleTwo">
+                            <div class="accordion-item">
+                              <h2 class="accordion-header" id="faqOne">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    What are the applications of DMIT
+                                </button>
+                              </h2>
+                              <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="faqOne" data-bs-parent="#accordionExampleTwo">
+                                <div class="accordion-body">
+                                    <ul>
+                                        <li><strong>Behavioral counseling</strong> : DMIT can help identify mental blocks and suggest remedies that align with a person's unique personality.</li>
+                                        <li><strong>Job recruitment and promotions</strong> : DMIT can be used in these contexts.</li>
+                                        <li><strong>Medical diagnosis</strong> : DMIT can be used in biomedical studies and to diagnose congenital malformations.</li>
+                                        <li><strong>Marriage counseling</strong> : DMIT can be used in this context.</li>
+                                        <li><strong>Child development</strong> : DMIT can help parents understand their child's innate abilities, learning style, and natural character. This information can be used to customize learning programs and improve the parent-child relationship.</li>
+                                    </ul>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="accordion-item">
+                              <h2 class="accordion-header" id="faqTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                  What are the benefits of DMIT ?
+                                </button>
+                              </h2>
+                              <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="faqTwo" data-bs-parent="#accordionExampleTwo">
+                                <div class="accordion-body">
+                                  The DMIT test reveals our comfort zones or potential zones which help us work towards a stable career.
+                                </div>
+                              </div>
+                            </div>
+                            <div class="accordion-item">
+                              <h2 class="accordion-header" id="faqThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                  What is the age limit for the DMIT test ?
+                                </button>
+                              </h2>
+                              <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="faqThree" data-bs-parent="#accordionExampleTwo">
+                                <div class="accordion-body">
+                                  DMIT Test for all, From birth through about age three there are vast numbers of connections and collections being recorded in the brain.
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+            </div>
+            <a id="testimonials" />
+        </div>
+        <!-- FAQs End -->
 
         <!-- Testimonial Start -->
         <div class="container-xxl py-5">
@@ -607,12 +758,12 @@
                 <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.1s">
                     <div class="testimonial-item bg-light rounded p-5">
                         <p class="fs-5">
-                            As a parent, seeing my daughter's excitement and enthusiasm for learning is truly heartwarming.
+                            I can see lot of changes after putting divyank in phonics... he reads Everywhere whenever he sees anything written
                         </p>
                         <div class="d-flex align-items-center bg-white me-n5" style="border-radius: 50px 0 0 50px;">
                             <img class="img-fluid flex-shrink-0 rounded-circle" src="img/testimonial-3.jpg" style="width: 90px; height: 90px;">
                             <div class="ps-3">
-                                <h3 class="mb-1">Malar</h3>
+                                <h3 class="mb-1">Sailaja, India</h3>
                                 <span>Proud Parent</span>
                             </div>
                             <i class="fa fa-quote-right fa-3x text-primary ms-auto d-none d-sm-flex"></i>
@@ -625,8 +776,8 @@
                         <div class="d-flex align-items-center bg-white me-n5" style="border-radius: 50px 0 0 50px;">
                             <img class="img-fluid flex-shrink-0 rounded-circle" src="img/testimonial-1.jpg" style="width: 90px; height: 90px;">
                             <div class="ps-3">
-                                <h3 class="mb-1">Aryan KK</h3>
-                                <span>IT Employee</span>
+                                <h3 class="mb-1">Angelina, Ukraine</h3>
+                                <span>Baby Sleep Consultant</span>
                             </div>
                             <i class="fa fa-quote-right fa-3x text-primary ms-auto d-none d-sm-flex"></i>
                         </div>
@@ -638,8 +789,8 @@
                         <div class="d-flex align-items-center bg-white me-n5" style="border-radius: 50px 0 0 50px;">
                             <img class="img-fluid flex-shrink-0 rounded-circle" src="img/testimonial-2.jpg" style="width: 90px; height: 90px;">
                             <div class="ps-3">
-                                <h3 class="mb-1">Shilpa</h3>
-                                <span>Home Maker</span>
+                                <h3 class="mb-1">Shilpa, India</h3>
+                                <span>IT Employee</span>
                             </div>
                             <i class="fa fa-quote-right fa-3x text-primary ms-auto d-none d-sm-flex"></i>
                         </div>
@@ -657,13 +808,13 @@
         <div class="row g-5">
             <div class="col-lg-3 col-md-6">
                 <h3 class="text-white mb-4">Get In Touch</h3>
-                <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>K.G Nagar, 1st Main, Chamarajpet 5th Main, 
+                <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>K.G Nagar, 1st Main, Chamarajpet Near By2 Coffee, Uma Theatre 5th Main, 
                     Bangalore Karnataka 560019</p>
                 <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+91 82176 99324</p>
                 <p class="mb-2"><i class="bi bi-whatsapp me-3"></i>+91 98446 04644</p>
                 <p class="mb-2"><i class="fa fa-envelope me-3"></i>support@ddaedu.in</p>
                 <div class="d-flex pt-2">
-                    <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-instagram"></i></a>
                     <a class="btn btn-outline-light btn-social" href="https://www.facebook.com/colours.ofjoy.31" target="_blank"><i class="fab fa-facebook-f"></i></a>
                     <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
                     <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
@@ -671,32 +822,32 @@
             </div>
             <div class="col-lg-3 col-md-6">
                 <h3 class="text-white mb-4">Quick Links</h3>
-                <a class="btn btn-link text-white-50" href="">About Us</a>
-                <a class="btn btn-link text-white-50" href="">Contact Us</a>
-                <a class="btn btn-link text-white-50" href="">Our Services</a>
-                <a class="btn btn-link text-white-50" href="">Privacy Policy</a>
-                <a class="btn btn-link text-white-50" href="">Terms & Condition</a>
+                <a class="btn btn-link text-white-50" href="#aboutus">About Us</a>
+                <a class="btn btn-link text-white-50" href="#faqs">FAQs</a>
+                <a class="btn btn-link text-white-50" href="#contactus">Contact Us</a>
+                <a class="btn btn-link text-white-50" href="#testimonials">Testimonials</a>
+                <a class="btn btn-link text-white-50" href="#courses">Courses</a>
             </div>
             <div class="col-lg-3 col-md-6">
                 <h3 class="text-white mb-4">Photo Gallery</h3>
                 <div class="row g-2 pt-2">
                     <div class="col-4">
-                        <img class="img-fluid rounded bg-light p-1" src="img/classes-1.jpg" alt="">
+                        <img class="img-fluid rounded bg-light p-1" src="img/gallery-01.jpg" alt="">
                     </div>
                     <div class="col-4">
-                        <img class="img-fluid rounded bg-light p-1" src="img/classes-2.jpg" alt="">
+                        <img class="img-fluid rounded bg-light p-1" src="img/gallery-02.jpg" alt="">
                     </div>
                     <div class="col-4">
-                        <img class="img-fluid rounded bg-light p-1" src="img/classes-3.jpg" alt="">
+                        <img class="img-fluid rounded bg-light p-1" src="img/gallery-03.jpg" alt="">
                     </div>
                     <div class="col-4">
-                        <img class="img-fluid rounded bg-light p-1" src="img/classes-4.jpg" alt="">
+                        <img class="img-fluid rounded bg-light p-1" src="img/gallery-04.jpg" alt="">
                     </div>
                     <div class="col-4">
-                        <img class="img-fluid rounded bg-light p-1" src="img/classes-5.jpg" alt="">
+                        <img class="img-fluid rounded bg-light p-1" src="img/gallery-05.jpg" alt="">
                     </div>
                     <div class="col-4">
-                        <img class="img-fluid rounded bg-light p-1" src="img/classes-6.jpg" alt="">
+                        <img class="img-fluid rounded bg-light p-1" src="img/gallery-06.jpg" alt="">
                     </div>
                 </div>
             </div>
@@ -720,10 +871,10 @@
                 </div>
                 <div class="col-md-6 text-center text-md-end">
                     <div class="footer-menu">
-                        <a href="">Home</a>
-                        <a href="">Cookies</a>
-                        <a href="">Help</a>
-                        <a href="">FAQs</a>
+                        <a href="index.html">Home</a>
+                        <a href="#courses">Courses</a>
+                        <a href="#testimonials">Testimonials</a>
+                        <a href="#faqs">FAQs</a>
                     </div>
                 </div>
             </div>
@@ -739,11 +890,22 @@
 
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="lib/wow/wow.min.js"></script>
     <script src="lib/easing/easing.min.js"></script>
     <script src="lib/waypoints/waypoints.min.js"></script>
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Lightbox JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+    <!-- Initialize Lightbox -->
+    <script>
+        lightbox.option({
+        'resizeDuration': 200,
+        'wrapAround': true
+        })
+    </script>
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
