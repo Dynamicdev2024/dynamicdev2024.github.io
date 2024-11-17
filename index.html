@@ -26,12 +26,74 @@
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/eventcard.css" rel="stylesheet">
 
     <!-- Lightbox CSS -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+    <style>
+    
+        .scroll-container {
+          width: 90%;
+          max-width: 1366px;
+          padding-top: 15px;
+          padding-bottom: 30px;
+          overflow-x: auto;
+          white-space: nowrap;
+          scroll-behavior: smooth;
+          margin:16px;
+          scrollbar-width: none; /* Hides scrollbar in Firefox */
+        }
+    
+        .scrollable::-webkit-scrollbar {
+            display: none; /* Hides scrollbar in Chrome, Safari, and Edge */
+        }
+
+        .event-card {
+          display: inline-block;
+          width: 300px;
+          margin-right: 15px;
+          background-color: #fff;
+          border-radius: 8px;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+          text-align: center;
+        }
+    
+        .event-card img {
+          width: 100%;
+          height: 150px;
+          object-fit: cover;
+          border-top-left-radius: 8px;
+          border-top-right-radius: 8px;
+        }
+    
+        .event-info {
+          padding: 15px;
+        }
+    
+        .event-name {
+          font-size: 1.2em;
+          font-weight: bold;
+          color: #333;
+          margin: 10px 0;
+        }
+    
+        .event-date, .event-venue, .event-status {
+          font-size: 0.9em;
+          color: #666;
+          margin: 5px 0;
+        }
+    
+        .event-status.upcoming {
+          color: green;
+        }
+    
+        .event-status.over {
+          color: red;
+        }
+      </style>
 </head>
 
 <body>
@@ -143,6 +205,78 @@
             </div>
         </div>
         <!-- Carousel End -->
+
+        <!-- Event Cards Starts -->
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="text-left mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                    <h1 class="mb-3">Our Events</h1>
+                    <p>
+                        Creating unforgettable moments with seamless event planning, innovative ideas, and exceptional experiences tailored to your child's future.
+                    </p>
+                </div>
+                <div class="row g-4">
+                    <div class="col-12">
+                        <div class="scroll-container">
+                            
+                            <div class="event-card">
+                                <img src="./img/cubbon-park.jpeg" alt="Event 5">
+                                <div class="event-info">
+                                  <div class="event-name">Atta Galata 2024</div>
+                                  <div class="event-date">Date: 30th Nov 2024</div>
+                                  <div class="event-venue">Venue: Cubbon Park</div>
+                                  <div class="event-status upcoming">Status: Upcoming</div>
+                                </div>
+                            </div>
+
+                            <div class="event-card">
+                                <img src="./img/childrens-day.jpeg" alt="Event 4">
+                                <div class="event-info">
+                                  <div class="event-name">Children's Day 2024</div>
+                                  <div class="event-date">Date: 14th Nov 2024</div>
+                                  <div class="event-venue">Venue: BBUL Jain Vidhyalaya, Shankarapura</div>
+                                  <div class="event-status over">Status: Completed</div>
+                                </div>
+                            </div>
+
+                            <div class="event-card">
+                                <img src="./img/phonics-workshop-parents.jpeg" alt="Event 3">
+                                <div class="event-info">
+                                  <div class="event-name">Phonics Workshop For Parents</div>
+                                  <div class="event-date">Date: 4th Sept 2021</div>
+                                  <div class="event-venue">Venue: Remote</div>
+                                  <div class="event-status over">Status: Completed</div>
+                                </div>
+                            </div>
+
+                            <div class="event-card">
+                              <img src="./img/talk-on-parenting.jpeg" alt="Event 2">
+                              <div class="event-info">
+                                <div class="event-name">Talk On Parenting</div>
+                                <div class="event-date">Date: 7th Mar 2021</div>
+                                <div class="event-venue">Venue: Colours Of Joy,Lingarajpuram</div>
+                                <div class="event-status over">Status: Completed</div>
+                              </div>
+                            </div>
+
+                            <div class="event-card">
+                                <img src="./img/magic-show.jpeg" alt="Event 1">
+                                <div class="event-info">
+                                  <div class="event-name">Children's Day Magic Show</div>
+                                  <div class="event-date">Date: 14th Nov 2020</div>
+                                  <div class="event-venue">Venue: Colours Of Joy,Lingarajpuram</div>
+                                  <div class="event-status over">Status: Completed</div>
+                                </div>
+                            </div>
+                          
+                            <!-- Add more event cards as needed -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Event Cards Ends -->
 
 
         <!-- Facilities Start -->
@@ -594,15 +728,9 @@
                 <div class="bg-light rounded">
                     <div class="row g-0">
                         <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
-                            <div class="h-100 d-flex flex-column justify-content-center p-5">
+                            <div class="position-relative h-100">
                                 <h1 class="mb-4">Contact Us</h1>
-                                <p>We'd love to hear from you! Reach out to us with any questions or to schedule a visit.</p>
-            <ul class="list-unstyled">
-                <li><strong>Address:</strong> K.G Nagar 1st Main, Near By2 Coffee, Uma Theatre, 5th Main, Chamarajpet, Bangalore -560019</li>
-                <li><strong>Phone:</strong> <a href="tel:+918217699324">+91 82176 99324</a></li>
-                <li><strong>Whatsapp:</strong> <a href="https://wa.link/ah00j8" target="_blank">+91 98446 04644</a></li>
-                <li><strong>Email:</strong> <a href="mailto:support@ddaedu.in">support@ddaedu.in</a></li>
-            </ul>
+                                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeorxXEm6usVTg4WmBGd8VFKzDnEPilz_4tSeeqLWdy0Kc-bg/viewform?embedded=true" width="100%" height="400" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
                             </div>
                         </div>
                         <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s" style="min-height: 400px;">
@@ -616,7 +744,6 @@
             <a id="faqs" />
         </div>
         <!-- Appointment End -->
-
 
         <!-- Team Start -->
         <!-- <div class="container-xxl py-5">
