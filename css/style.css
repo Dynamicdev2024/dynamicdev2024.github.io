@@ -248,6 +248,12 @@ h6,
     color: rgba(255, 255, 255, .5);
 }
 
+/* Match carousel-0 image dimensions with carousel-1 */
+.header-carousel .owl-carousel-item:first-child img {
+    aspect-ratio: 16/9;
+    object-fit: cover;
+}
+
 
 /*** Facility ***/
 .facility-item .facility-icon {
