@@ -1163,6 +1163,290 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+
+    <!-- Admission Popup -->
+    <div id="admissionPopup" class="admission-popup-overlay">
+        <div class="admission-popup-container">
+            <button class="admission-popup-close" onclick="closeAdmissionPopup()">&times;</button>
+            <div class="admission-popup-content">
+                <div class="admission-popup-icon">
+                    <i class="fa fa-graduation-cap"></i>
+                </div>
+                <h2 class="admission-popup-title">Admissions Open for 2025-26!</h2>
+                <div class="admission-popup-programs">
+                    <div class="admission-popup-item">
+                        <i class="fa fa-check-circle"></i>
+                        <span>IGCSE Curriculum</span>
+                    </div>
+                    <div class="admission-popup-item">
+                        <i class="fa fa-check-circle"></i>
+                        <span>Cambridge Early Years</span>
+                    </div>
+                    <div class="admission-popup-item">
+                        <i class="fa fa-check-circle"></i>
+                        <span>Jolly Phonics Program</span>
+                    </div>
+                    <div class="admission-popup-item">
+                        <i class="fa fa-check-circle"></i>
+                        <span>Limited Seats Available</span>
+                    </div>
+                </div>
+                <div class="admission-popup-buttons">
+                    <a href="https://wa.link/ah00j8" target="_blank" class="admission-popup-btn admission-popup-btn-primary">
+                        <i class="bi bi-whatsapp"></i> Schedule a Visit
+                    </a>
+                    <a href="#courses" class="admission-popup-btn admission-popup-btn-secondary" onclick="closeAdmissionPopup()">
+                        Learn More
+                    </a>
+                </div>
+                <div class="admission-popup-contact">
+                    <i class="fa fa-phone-alt"></i> +91 8217699324
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Admission Popup Styles -->
+    <style>
+        .admission-popup-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.6);
+            z-index: 9999;
+            animation: fadeIn 0.3s ease-in-out;
+        }
+
+        .admission-popup-overlay.show {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideUp {
+            from {
+                transform: translateY(50px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        .admission-popup-container {
+            background: white;
+            border-radius: 20px;
+            max-width: 500px;
+            width: 90%;
+            position: relative;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+            animation: slideUp 0.4s ease-out;
+        }
+
+        .admission-popup-close {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background: transparent;
+            border: none;
+            font-size: 32px;
+            color: #666;
+            cursor: pointer;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            transition: all 0.3s ease;
+        }
+
+        .admission-popup-close:hover {
+            background: #f0f0f0;
+            color: #333;
+            transform: rotate(90deg);
+        }
+
+        .admission-popup-content {
+            padding: 40px 30px 30px;
+            text-align: center;
+        }
+
+        .admission-popup-icon {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, #FE6B8B 0%, #FF8E53 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+            box-shadow: 0 4px 15px rgba(254, 107, 139, 0.4);
+        }
+
+        .admission-popup-icon i {
+            font-size: 40px;
+            color: white;
+        }
+
+        .admission-popup-title {
+            color: #1a3a5c;
+            font-size: 26px;
+            font-weight: 700;
+            margin-bottom: 25px;
+            font-family: 'Lobster Two', cursive;
+        }
+
+        .admission-popup-programs {
+            margin-bottom: 25px;
+            text-align: left;
+        }
+
+        .admission-popup-item {
+            display: flex;
+            align-items: center;
+            padding: 10px 0;
+            font-size: 16px;
+            color: #333;
+        }
+
+        .admission-popup-item i {
+            color: #FF6B35;
+            margin-right: 12px;
+            font-size: 18px;
+        }
+
+        .admission-popup-buttons {
+            display: flex;
+            gap: 12px;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .admission-popup-btn {
+            flex: 1;
+            min-width: 180px;
+            padding: 14px 24px;
+            border-radius: 50px;
+            font-size: 16px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+        }
+
+        .admission-popup-btn-primary {
+            background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
+            color: white;
+            box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
+        }
+
+        .admission-popup-btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(37, 211, 102, 0.5);
+            color: white;
+        }
+
+        .admission-popup-btn-secondary {
+            background: white;
+            color: #1a3a5c;
+            border: 2px solid #1a3a5c;
+        }
+
+        .admission-popup-btn-secondary:hover {
+            background: #1a3a5c;
+            color: white;
+            transform: translateY(-2px);
+        }
+
+        .admission-popup-contact {
+            color: #666;
+            font-size: 15px;
+            padding-top: 15px;
+            border-top: 1px solid #eee;
+        }
+
+        .admission-popup-contact i {
+            color: #FF6B35;
+            margin-right: 8px;
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 576px) {
+            .admission-popup-container {
+                width: 95%;
+                max-width: 95%;
+            }
+
+            .admission-popup-content {
+                padding: 35px 20px 25px;
+            }
+
+            .admission-popup-title {
+                font-size: 22px;
+            }
+
+            .admission-popup-item {
+                font-size: 14px;
+            }
+
+            .admission-popup-buttons {
+                flex-direction: column;
+            }
+
+            .admission-popup-btn {
+                width: 100%;
+                min-width: auto;
+            }
+        }
+    </style>
+
+    <!-- Admission Popup Script -->
+    <script>
+        // Show popup after 5 seconds
+        setTimeout(function() {
+            showAdmissionPopup();
+        }, 5000);
+
+        function showAdmissionPopup() {
+            // Check if user has already seen the popup in this session
+            if (!sessionStorage.getItem('admissionPopupShown')) {
+                document.getElementById('admissionPopup').classList.add('show');
+                sessionStorage.setItem('admissionPopupShown', 'true');
+            }
+        }
+
+        function closeAdmissionPopup() {
+            document.getElementById('admissionPopup').classList.remove('show');
+        }
+
+        // Close popup when clicking outside
+        document.getElementById('admissionPopup').addEventListener('click', function(e) {
+            if (e.target === this) {
+                closeAdmissionPopup();
+            }
+        });
+
+        // Close popup with Escape key
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                closeAdmissionPopup();
+            }
+        });
+    </script>
 </body>
 
 </html>
